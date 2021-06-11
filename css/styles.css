@@ -1,0 +1,12 @@
+* {
+	font-family: 'Inconsolata', monospace;
+}
+
+body {
+    margin: 0;
+    background: black;
+}
+
+p {
+    color: white;
+}
