@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html {
   margin: 0;
   height: 100vh;
@@ -47,4 +48,63 @@ footer {
 
 hr {
   width: 98%;
+=======
+/*
+initial colour palette 
+#283149 dark
+#404b69 med
+#dbedf3 light
+*/
+
+* {
+  font-family: "Inconsolata", monospace;
+}
+
+body {
+  margin: 0;
+  background: #283149;
+}
+
+p {
+  color: #dbedf3;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #404b69;
+}
+
+ul.topnav li {
+  float: left;
+}
+
+ul.topnav li a {
+  display: block;
+  color: #dbedf3;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+  background-color: #111;
+}
+
+ul.topnav li a.active {
+  background-color: #04aa6d;
+}
+
+ul.topnav li.right {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right,
+  ul.topnav li {
+    float: none;
+  }
+>>>>>>> d723766 (Add initial navbar and meta tags)
 }
