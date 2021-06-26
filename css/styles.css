@@ -1,0 +1,33 @@
+body {
+    font-family: 'Open Sans';
+    font-size: 16px;
+}
+
+.wrap {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.topnav {    
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;  
+}
+
+.topnav li {
+    margin: 0;
+    float:right;
+    margin: 5px;
+}
+
+.topnav li a {
+    margin: 0px;
+    text-decoration: none;
+    color: black;
+}
+
+.topnav li.left {
+    float: left;
+}
