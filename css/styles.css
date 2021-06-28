@@ -1,34 +1,50 @@
+html {
+  margin: 0;
+  height: 100vh;
+}
+
 body {
-    font-family: 'Open Sans';
-    font-size: 12pt;
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+  font-family: "Open Sans";
+  font-size: 12pt;
 }
 
-.container {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+main {
+  overflow: auto;
 }
 
-.topnav {    
-    list-style: none;
-    margin: 0;
-    padding: 0px;
-    overflow: hidden;  
-    font-size: 14pt;
+footer {
+  text-align: center;
+  font-size: 10pt;
+}
+
+.topnav {
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+  font-size: 14pt;
 }
 
 .topnav li {
-    margin: 0;
-    float:right;
-    margin: 5px;
+  margin: 0;
+  float: right;
+  margin: 5px;
 }
 
 .topnav li a {
-    margin: 0px;
-    text-decoration: none;
-    color: black;
+  margin: 0px;
+  text-decoration: none;
+  color: black;
 }
 
 .topnav li.left {
-    float: left;
+  float: left;
+}
+
+hr {
+  width: 98%;
 }
