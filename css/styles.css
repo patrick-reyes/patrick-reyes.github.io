@@ -1,33 +1,110 @@
+<<<<<<< HEAD
+html {
+  margin: 0;
+  height: 100vh;
+}
+
 body {
-    font-family: 'Open Sans';
-    font-size: 16px;
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+  font-family: "Open Sans";
+  font-size: 12pt;
 }
 
-.wrap {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+main {
+  overflow: auto;
 }
 
-.topnav {    
-    list-style: none;
-    margin: 0;
-    padding: 0px;
-    overflow: hidden;  
+footer {
+  text-align: center;
+  font-size: 10pt;
+}
+
+.topnav {
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+  font-size: 14pt;
 }
 
 .topnav li {
-    margin: 0;
-    float:right;
-    margin: 5px;
+  margin: 0;
+  float: right;
+  margin: 5px;
 }
 
 .topnav li a {
-    margin: 0px;
-    text-decoration: none;
-    color: black;
+  margin: 0px;
+  text-decoration: none;
+  color: black;
 }
 
 .topnav li.left {
-    float: left;
+  float: left;
+}
+
+hr {
+  width: 98%;
+=======
+/*
+initial colour palette 
+#283149 dark
+#404b69 med
+#dbedf3 light
+*/
+
+* {
+  font-family: "Inconsolata", monospace;
+}
+
+body {
+  margin: 0;
+  background: #283149;
+}
+
+p {
+  color: #dbedf3;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #404b69;
+}
+
+ul.topnav li {
+  float: left;
+}
+
+ul.topnav li a {
+  display: block;
+  color: #dbedf3;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+  background-color: #111;
+}
+
+ul.topnav li a.active {
+  background-color: #04aa6d;
+}
+
+ul.topnav li.right {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right,
+  ul.topnav li {
+    float: none;
+  }
+>>>>>>> d723766d18c64854e0722167224242bd1ecc853e
 }
