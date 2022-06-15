@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  width: 700px;
+  max-width: 700px;
   margin: auto;
   padding: 20px;
   position: relative;
@@ -14,7 +14,7 @@ body {
 }
 
 main {
-  overflow: auto;
+  
 }
 
 footer {
@@ -49,5 +49,5 @@ footer {
 }
 
 hr {
-  width: 98%;
+  width: 100%;
 }
