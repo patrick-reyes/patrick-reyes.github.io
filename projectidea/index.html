@@ -117,83 +117,103 @@
                 <div class="card-body">
                     <h4>Overview</h4>
                     <p>
-                        My project is a website aggregator that will display the schedule, news, and race data related
-                        to
-                        Formula 1 in a single webpage with interactive components.
+                        My project will be a website aggregator that will display the schedule, news, and race data
+                        related to Formula 1 (F1) in a single webpage with interactive components.<br />
                         The name of the project that I have chosen is F1Dash. It is a play on the word “dash” which
-                        means to be
-                        in a hurry (something you want to be as a driver in Formula1) as well as a shortened version of
-                        the word
-                        dashboard.
+                        means to be in a hurry (something you want to be as a driver in F1) as well as a shortened
+                        version of the word dashboard.<br />
                         The interactive components will allow a user to customise the data visualizations which can be
-                        used for
-                        analytics and comparison.
+                        used for analytics and comparison.
                     </p>
                     <h4>Motivation</h4>
                     <p>
-
-                        Globally, the average audience per Grand Prix in 2021 was 70.3m so there is a large market for
-                        an
-                        application that aggregates Formula 1 news coupled with an interactive statistics component.
-                        I am an avid Formula 1 fan and love to keep up to date on the latest news, race statistics, and
-                        data but
-                        I
-                        must go to multiple sources and webpages in my bookmarks for the variety of Formula 1 related
-                        topics
-                        that I
-                        am interested in. The goal of this project is to display it all in one place using modern
-                        open-source UI
-                        components and visualization libraries to make the application look beautiful.
+                        Globally, the average audience per Grand Prix in 2021 was 70.3m so there is a large market for an application that aggregates F1 news coupled with an interactive statistics component. <br/>
+                        I enjoy following F1 and the goal of this project is to display the latest information in one easily accessible place using open-source UI components and visualization libraries to make the application look modern and easy to use. <br/>
+                        This project is interesting to me because it gives me the opportunity to learn the development skills required to design and build an application that is hosted in the cloud from scratch.
                     </p>
                     <h4>Description</h4>
-                    <p>
-
-                        The application will have 2 main components.
-                        The first section will comprise of an aggregation of the latest Formula 1 news articles and
-                        social media
-                        posts from various online sources that would be displayed in a chronological timeline. This data
-                        will be
-                        obtained by integrating with available API’s. If no API’s are available, there will be services
-                        that
-                        scrape
-                        a list of websites for the relevant data to use in the app.
-                        The application will not be ripping off the content from the sources to display as a whole.
-                        Instead it
-                        will
-                        provide a short summary of the article with a link to the original source.
-                        The second section will be an interactive page where a user can view previous race and telemetry
-                        data
-                        using
-                        a range of front-end components to filter the data to their liking. This would allow a user to
-                        perform
-                        analysis and comparisons of the data for their own entertainment purposes.
-
-                    </p>
+                    <p>Automatically updated – The sources and data that will be displayed on the app needs to be
+                        automatically updated to show the latest information. To achieve this, an automated backend
+                        service will need to be built that will query online sources for news, videos, schedules, and
+                        statistics. Due to the large range of sources available and the time constraint of releasing the
+                        application, the project will initially integrate with publicly available APIs to gather data.
+                        Web scraping is another option to retrieve data although this option will remain as a potential
+                        future addition for the scope of this project.</p>
+                    <p>Always Online – In order to serve the application 24/7, it will be hosted on a server using a
+                        cloud services platform (AWS, Microsoft Azure, GCP, Oracle Cloud). Further research will need to
+                        be done when selecting which cloud platform due to the current unknown data storage and transfer
+                        requirements required for the calculation of costs although the services provided by each of
+                        cloud providers are similar enough to be confident that this decision can be made at a later
+                        date.</p>
+                    <p>Accessible anywhere – By having the application available online, this allows the opportunity to
+                        have it accessible across both desktop and mobile platforms. The application front-end will be
+                        designed to be mobile friendly although a native client for mobile will not be developed at this
+                        point. If the application concept proves to be successful then a native client can be
+                        considered.</p>
+                    <p>Statistics Analysis – Interactive visualisation of F1 statistics is the main feature of this
+                        application. It will allow a user to apply filters to display historical and live F1 race timing
+                        and telemetry data. This will allow a user to get a better insight into F1 races and be able to
+                        use the visualised data to easily form data-backed opinions. </p>
                     <h4>Tools and Technologies</h4>
-                    <p>
+                    <p>A cloud platform will be used to create and host a Linux virtual server which will be the host of
+                        the web application. There are a range of available Linux distributions that would be applicable
+                        but I will most likely use Ubuntu Server because of the available documentation.</p>
+                    <p>A database is required to store the data that is fetched from the public APIs. An initial mock-up
+                        of the project will be created with an SQL database like <a
+                            href="https://www.mysql.com/">MySQL</a> or <a
+                            href="https://www.postgresql.org/">PostgreSQL</a> and the performance of the database can be
+                        evaluated. A NoSQL database can be reviewed if the SQL databases are not performing as expected
+                        although this is not expected to be of concern.</p>
+                    <ul>
+                        <li>Web Server – Apache Tomcat which comes pre-packaged in with Java Spring
+                        </li>
 
-                        The application will require a database to write the relevant data that is obtained by scraping
-                        and
-                        integrating with social media services
-                        Cloud Services architecture that would host the application
-                        DNS name for the site
-                        Virtual server EC2
-                        Database of choice, probably nosql because the data is mostly static
-                        Services that download data
-                        Services that scrape web sources
-                        Web Server – nginx/apache http server/
-                        Programming languages – backend language/frontend language/scripting?
-                        Front-end framework – react/vue/angular, component library, nextjs SSR,
-                    </p>
+                        <li>Web Application Framework – Java Spring RESTful web service to serve the API for the clients
+                            to consume data.</li>
+
+                        <li>Front-end Framework – HTML, CSS, JavaScript languages to develop using the React front-end
+                            framework</li>
+
+                        <li>Text editor – Visual Studio Code, JetBrains IDEA for coding, debugging, and packaging the
+                            applications.</li>
+
+                        <li>Internet browser – Mozilla Firefox/Google Chrome web browser to test, debug, and run the
+                            application.</li>
+                    </ul>
                     <h4>Skills Required</h4>
-                    <p></p>
+                    <p>The skills required will predominantly be software programming based because the architecture of
+                        the application will be cloud based and the data is retrieved through online sources. The skills
+                        required to complete this project covers the knowledge of full-stack development of an
+                        application: from the backend services that gathers data, web services that serve the data, and
+                        frontend clients that display the data. </p>
+                    <p>More specifically, knowledge in:
+                    <ul>
+                        <li>Cloud virtual server instantiation and administration</li>
+                        <li>Ubuntu Server systems administration</li>
+                        <li>Java, SQL, and HTML/CSS/JavaScript programming</li>
+                        <li>HTTP and RESTful web services</li>
+                    </ul>
+                    </p>
+                    <p>The documentation of open-source software and tools would be the best place to gain the skills
+                        required to complete this project. Also, discussions boards like <a
+                            href="https://stackoverflow.com/">Stack Overflow</a> or <a
+                            href="https://stackexchange.com/">Stack Exchange</a> can have the answers to common issues
+                        or problems that have been experienced by others.</p>
                     <h4>Outcome</h4>
-                    <p></p>
+                    <p>If this project were to be successful, it would provide a single accessible dashboard of
+                        information, entertainment, and knowledge of F1 news, media, and statistics for a user. It will
+                        eliminate having to open multiple websites by providing a single place for F1 news while also
+                        providing useful tools to analyse F1 data. I don’t imagine the impact to be world changing. It
+                        will be another source of entertainment that makes life just that little bit easier for anyone
+                        who enjoys following F1. </p>
+                    <p>The impact it would have on me personally would be greater. I would have learnt the skills
+                        required to successfully design and build an application that can manipulate and display data
+                        obtained from multiple online sources. </p>
                 </div>
             </div>
         </div>
     </main>
-    
+
     <footer>
         <div class="container">
             <hr />
