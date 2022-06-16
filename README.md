@@ -1,3 +1,3 @@
 # patrick-reyes.github.io
 
-My personal website which can be viewed at https://patrickreyes.dev
+My Profile website for RMIT course Introduction to Information Techology Assignment 1 which can be viewed at https://patrick-reyes.github.io
